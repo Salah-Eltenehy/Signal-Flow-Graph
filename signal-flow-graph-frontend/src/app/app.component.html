@@ -1,0 +1,18 @@
+
+<div style="margin-left: 700px;">
+  <button class="btn btn-primary" (click)= "join()"  type= "button" >join</button>
+  <button class="btn btn-success" (click)= "generate_vertex()"  type= "button" >vertex</button>
+  <button class="btn btn-warning" (click)= "generate_loop()"  type= "button" >loop</button>
+  <button class="btn btn-danger" (click)= "generate_curved_line()"  type= "button" >curved line</button>
+  <input  type ="text"  [(ngModel)] = "gain" style =" height : 40px; width : 50px;">
+</div>
+<div style="margin-left: 2px;" (click) = "update_data()">
+  <canvas id = "canvas" height="670" width = "1530"></canvas>
+</div>
+<div style="margin-left: 675px;">
+<button  class="btn btn-success" (click)= "evaluate_tranfer_function()"  type= "button" >Evaluate Transfer Function</button>
+<button  class="btn btn-primary" (click)= "new()"  type= "button" >new</button>
+</div>
+
+
+
